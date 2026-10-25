@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BARBARA — піцерія</title>
+  <meta name="description" content="Піцерія «BARBARA»: піца, роли, бургери, шаурма, фрі, салати, домашня ліпка. Щодня з 11:00 до 22:00.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&family=Unbounded:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="BARBARA — на головну">BARBARA</a>
+      <button class="nav-toggle" aria-label="Відкрити меню" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+      <nav id="nav" class="nav">
+        <a href="index.html" class="active" aria-current="page">Головна</a>
+        <a href="menu.html">Меню</a>
+        <a href="delivery.html">Доставка</a>
+        <a href="contacts.html">Контакти</a>
+        <a class="btn btn-small" href="tel:+380930995176">Замовити</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1 class="neon" aria-label="BARBARA">BARBARA</h1>
+        <p class="hero-sub">Піцерія. Піца, роли, бургери, шаурма та домашня ліпка — щодня з 11:00 до 22:00.</p>
+        <div class="hero-actions">
+          <a class="btn" href="tel:+380930995176">Подзвонити та замовити</a>
+          <a class="btn btn-ghost" href="menu.html">Дивитися меню</a>
+        </div>
+        <p class="status" id="open-status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Що у нас смачного</h2>
+        <div class="cats">
+          <a class="cat" href="menu.html#pizza"><div class="ph ph-pizza" role="img" aria-label="Піца"></div><h3>Піца</h3><p>На тонкому тісті, з тягучим сиром.</p></a>
+          <a class="cat" href="menu.html#rolls"><div class="ph ph-roll" role="img" aria-label="Роли"></div><h3>Роли</h3><p>Класичні та запечені, великий рол.</p></a>
+          <a class="cat" href="menu.html#burgers"><div class="ph ph-burger" role="img" aria-label="Бургери"></div><h3>Бургери та шаурма</h3><p>Ситно та гаряче.</p></a>
+          <a class="cat" href="menu.html#sides"><div class="ph ph-fries" role="img" aria-label="Фрі та салати"></div><h3>Фрі, салати, ліпка</h3><p>До основної страви або окремо.</p></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container split">
+        <div>
+          <h2>Заходьте або замовляйте додому</h2>
+          <p>Затишний зал із теплим деревом і неоном. Не маєте часу — привеземо замовлення. Умови доставки дивіться на сторінці «Доставка».</p>
+          <a class="btn" href="delivery.html">Умови доставки</a>
+        </div>
+        <div class="ph ph-hall" role="img" aria-label="Зал піцерії"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-logo">BARBARA</p>
+        <p>Піца, роли, бургери, шаурма, фрі, салати та домашня ліпка.</p>
+      </div>
+      <div>
+        <p class="footer-title">Телефони</p>
+        <p><a href="tel:+380930995176">093 099 51 76</a> (Лайф)<br><a href="tel:+380681334343">068 133 43 43</a> (Київстар)</p>
+      </div>
+      <div>
+        <p class="footer-title">Графік роботи</p>
+        <p>Щодня з 11:00 до 22:00</p>
+        <p><a href="https://www.instagram.com/barbara_pizza_gnivan/" target="_blank" rel="noopener">Instagram: barbara_pizza_gnivan</a></p>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year">2026</span> Піцерія «BARBARA»</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Меню — BARBARA</title>
+  <meta name="description" content="Меню піцерії BARBARA: піца, роли, бургери, шаурма, фрі, салати, домашня ліпка.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&family=Unbounded:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="BARBARA — на головну">BARBARA</a>
+      <button class="nav-toggle" aria-label="Відкрити меню" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+      <nav id="nav" class="nav">
+        <a href="index.html">Головна</a>
+        <a href="menu.html" class="active" aria-current="page">Меню</a>
+        <a href="delivery.html">Доставка</a>
+        <a href="contacts.html">Контакти</a>
+        <a class="btn btn-small" href="tel:+380930995176">Замовити</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <div class="container">
+        <h1>Меню</h1>
+        <p>Назви й ціни нижче — приклад. Замініть на актуальні.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="filters" role="tablist" aria-label="Категорії меню">
+          <button class="filter active" data-filter="all" role="tab">Усе</button>
+          <button class="filter" data-filter="pizza" role="tab">Піца</button>
+          <button class="filter" data-filter="rolls" role="tab">Роли</button>
+          <button class="filter" data-filter="burgers" role="tab">Бургери та шаурма</button>
+          <button class="filter" data-filter="sides" role="tab">Фрі, салати, ліпка</button>
+        </div>
+        <div class="menu-grid" id="menu-grid">
+        <article class="item" data-cat="pizza">
+          <div class="ph ph-pizza" role="img" aria-label="Маргарита"></div>
+          <div class="item-body">
+            <h3>Маргарита</h3>
+            <p>Томатний соус, моцарела, базилік.</p>
+            <p class="price">XX ₴</p>
+          </div>
+        </article>
+        <article class="item" data-cat="pizza">
+          <div class="ph ph-pizza" role="img" aria-label="Пепероні"></div>
+          <div class="item-body">
+            <h3>Пепероні</h3>
+            <p>Томатний соус, моцарела, пепероні.</p>
+            <p class="price">XX ₴</p>
+          </div>
+        </article>
+        <article class="item" data-cat="pizza">
+          <div class="ph ph-pizza" role="img" aria-label="Чотири сири"></div>
+          <div class="item-body">
+            <h3>Чотири сири</h3>
+            <p>Моцарела, гауда, пармезан, дорблю.</p>
+            <p class="price">XX ₴</p>
+          </div>
+        </article>
+        <article class="item" data-cat="pizza">
+          <div class="ph ph-pizza" role="img" aria-label="М’ясна"></div>
+          <div class="item-body">
+            <h3>М’ясна</h3>
+            <p>Шинка, бекон, мисливські ковбаски, моцарела.</p>
+            <p class="price">XX ₴</p>
+          </div>
+        </article>
+        <article class="item" data-cat="rolls">
+          <div class="ph ph-rolls" role="img" aria-label="Філадельфія"></div>
+          <div class="item-body">
+            <h3>Філадельфія</h3>
+            <p>Лосось, вершковий сир, огірок.</p>
+            <p class="price">XX ₴</p>
+          </div>
+        </article>
+        <article class="item" data-cat="rolls">
+          <div class="ph ph-rolls" role="img" aria-label="Каліфорнія"></div>
+          <div class="item-body">
+            <h3>Каліфорнія</h3>
+            <p>Краб, авокадо, ікра тобіко.</p>
+            <p class="price">XX ₴</p>
+          </div>
+        </article>
+        <article class="item" data-cat="rolls">
+          <div class="ph ph-rolls" role="img" aria-label="Великий рол"></div>
+          <div class="item-body">
+            <h3>Великий рол</h3>
+            <p>Збірний рол для компанії.</p>
+            <p class="price">XX ₴</p>
+          </div>
+        </article>
+        <article class="item" data-cat="burgers">
+          <div class="ph ph-burgers" role="img" aria-label="Бургер класичний"></div>
+          <div class="item-body">
+            <h3>Бургер класичний</h3>
+            <p>Котлета, овочі, сир, фірмовий соус.</p>
+            <p class="price">XX ₴</p>
+          </div>
+        </article>
+        <article class="item" data-cat="burgers">
+          <div class="ph ph-burgers" role="img" aria-label="Шаурма"></div>
+          <div class="item-body">
+            <h3>Шаурма</h3>
+            <p>Курка, овочі, соус, лаваш.</p>
+            <p class="price">XX ₴</p>
+          </div>
+        </article>
+        <article class="item" data-cat="sides">
+          <div class="ph ph-sides" role="img" aria-label="Картопля фрі"></div>
+          <div class="item-body">
+            <h3>Картопля фрі</h3>
+            <p>З сирним або томатним соусом.</p>
+            <p class="price">XX ₴</p>
+          </div>
+        </article>
+        <article class="item" data-cat="sides">
+          <div class="ph ph-sides" role="img" aria-label="Салат"></div>
+          <div class="item-body">
+            <h3>Салат</h3>
+            <p>Свіжі овочі, олія.</p>
+            <p class="price">XX ₴</p>
+          </div>
+        </article>
+        <article class="item" data-cat="sides">
+          <div class="ph ph-sides" role="img" aria-label="Домашня ліпка"></div>
+          <div class="item-body">
+            <h3>Домашня ліпка</h3>
+            <p>Гаряча, зі свіжими добавками.</p>
+            <p class="price">XX ₴</p>
+          </div>
+        </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-logo">BARBARA</p>
+        <p>Піца, роли, бургери, шаурма, фрі, салати та домашня ліпка.</p>
+      </div>
+      <div>
+        <p class="footer-title">Телефони</p>
+        <p><a href="tel:+380930995176">093 099 51 76</a> (Лайф)<br><a href="tel:+380681334343">068 133 43 43</a> (Київстар)</p>
+      </div>
+      <div>
+        <p class="footer-title">Графік роботи</p>
+        <p>Щодня з 11:00 до 22:00</p>
+        <p><a href="https://www.instagram.com/barbara_pizza_gnivan/" target="_blank" rel="noopener">Instagram: barbara_pizza_gnivan</a></p>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year">2026</span> Піцерія «BARBARA»</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
